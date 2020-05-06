@@ -15,9 +15,10 @@ def consolidate_cart(cart)
   checkout_list = []
   
   cart.each do |item_hash|
-    item_name = find_item_by_name_in_collection(item_hash[:item], checkout_list)
+    item_by_name = find_item_by_name_in_collection(item_hash[:item], checkout_list)
     
-    
+    if item_hash == item_by_name
+      
     
   end
 
