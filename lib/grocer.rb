@@ -14,6 +14,8 @@ def consolidate_cart(cart)
 
   checkout_list = []
   
+  item_name = find_item_by_name_in_collection()
+  
   cart.each do |item_hash|
     checkout_list << item_hash
   end
